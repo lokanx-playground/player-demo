@@ -2,6 +2,7 @@
 (function() {
     const BACKLEND_API = "https://api.myjson.com/bins/so5pk"
     const DUMMY_MOVIE_URL = "toystory.mp4"
+    
     let activeMovie = -1;
     let movieData = {};
     
@@ -20,9 +21,9 @@
             playerContainer.empty();
         }
 
-        
+        // Using a dummy since example movies seems to be down
         //const movieUrl = movieData[movieId].video;
-        const movieUrl = DUMMY_MOVIE_URL; // Using a dummy since example movies seems to be down
+        const movieUrl = DUMMY_MOVIE_URL; 
         activeMovie = movieId;
         playerContainer.append("<video src='" + movieUrl + "' class='player' autoplay controls/>").removeClass("player");        
     }
