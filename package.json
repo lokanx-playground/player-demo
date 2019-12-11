@@ -1,0 +1,12 @@
+{
+  "name": "playerdemo",
+  "version": "0.0.1b",
+  "scripts": {
+    "start": "./node_modules/.bin/fast-live-reload -s src"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "fast-live-reload": "2.8.2"
+  }
+}
